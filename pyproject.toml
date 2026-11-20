@@ -1,0 +1,24 @@
+[project]
+name = "sigma-tutor"
+version = "0.1.0"
+description = "Teaching logic for Sigma's STEM tutor: Socratic rules, learner context and the answer-leak guard"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://github.com/sigmaexplains/sigma-tutor"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sigma_tutor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
